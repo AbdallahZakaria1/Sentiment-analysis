@@ -1,0 +1,78 @@
+.Img1 {
+	display: block;
+	width: 30%;
+	margin: auto;
+	width: 350px;
+	height:350px;
+	
+	}	
+.Presentation{
+text-align: center ;
+font-weight: bold;
+}
+
+.titlered{
+text-align: center;
+font-weight: italic;
+text-decoration: underline red;	
+
+}
+.button{
+background-color: #20E9FD;
+border:none;
+color:white;
+padding:15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+border-radius: 2rem;
+display:block;
+margin:auto;
+width: 10%;
+
+}
+.button2{
+background-color: #20E9FD;
+border:none;
+color:white;
+padding:15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+border-radius: 3rem;
+display:block;
+margin:auto;
+width: 10%;
+}
+.a{
+font-size:xx-large;
+}
+.etapeTexte{
+text-align: center ;
+font-weight: bold;
+font-size:xx-large;
+text-decoration: underline red;
+
+}
+
+
+.lefff{
+
+text-align: center ;
+font-weight: bold;
+font-size:xx-large;
+
+}
+.lignecode{
+background-color: white;
+color:black;
+border: 2px solid red;
+margin: 20px;
+padding: 10px;
+width:50%;
+
+}

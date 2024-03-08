@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title> Page 1 </title>
+
+</head>
+
+<body>
+	<div class="Presentation">
+		<h1>Presentation De l'analyse de sentiment</h1>
+	</div>
+	
+		<h3 class='titlered'>Qu'est-ce que l'analyse de sentiments ?</h3>
+		
+	<div class="Presentation">
+		<p>L'analyse de sentiments est un processus informatique qui permet de déterminer les émotions et attitudes d'un individu à l'égard d'un sujet ou d'un produit en analysant les données textuelles.</p>
+		<p>Cela peut être utilisé pour comprendre les réactions des consommateurs à un produit ou à une marque, ou pour évaluer les opinions d'un public sur un sujet donné.</p>
+		<img src={{ url_for('static', filename='sentiment_analysis.jpg') }} class="Img1">
+	</div>
+	<br>
+	<a class="button" href="etape"> <strong>COMMENCER</strong></a>
+</body>
+
+
+
+
+
+
+</html>

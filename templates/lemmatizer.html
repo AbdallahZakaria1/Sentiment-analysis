@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+
+  </h3>
+    <pre>
+      <code class="python">
+import tokenizer
+from base import lefff, BOOSTER_DICT
+
+
+def lemmatize(text):
+
+    text = tokenizer.split(text)
+
+    for ligne in text:
+
+        if len(ligne) == 0:
+            text.remove(ligne)
+
+        for mot in ligne:
+            if mot not in BOOSTER_DICT.keys():
+                try:
+                    pos = ligne.index(mot)
+                    ligne[pos] = lefff[mot]
+                except:pass
+
+    return text
+      </code>
+    </pre>
+
+
+<footer>
+
+<a class="button2" href="etape"> <strong>Revenir au étape</strong></a>
+
+</footer>
+
+
+
+
+
+
+	</body>
+</html>

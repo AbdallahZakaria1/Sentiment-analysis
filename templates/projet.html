@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title> Page 1 </title>
+
+<html>
+  <head>
+    <title>Mon application</title>
+    <script>
+      function submitForm() {
+        var input = document.getElementById("input").value;
+        fetch("/submit", {
+          method: "POST",
+          body: JSON.stringify({input: input}),
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          var responseParagraph = document.getElementById("response");
+          responseParagraph.innerHTML = data.response;
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Analyser une phrase</h1>
+    <p>En écrivant votre texte ci dessous, via le script python derrière, il analysera le score de la phrase.</p>
+    <form>
+      <label for="input">Entrez votre phrase:</label>
+      <textarea id="input" name="text"rows="5" cols="33"></textarea>
+      <button type="button" onclick="submitForm()">Envoyer</button>
+    </form>
+        <p id="response"></p>
+<footer>
+
+<a class="button2" href="etape"> <strong>Revenir au étape</strong></a>
+
+</footer>
+    </body>
+</html>
